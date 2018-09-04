@@ -35,17 +35,26 @@
                                     <action selector="coldCallButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0we-bS-zOV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSA-Kg-EPf">
+                                <rect key="frame" x="143" y="214" width="89" height="239"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="kSA-Kg-EPf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="65q-re-K7g"/>
                             <constraint firstItem="bgG-NN-JwL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="JZP-m1-LbP"/>
                             <constraint firstItem="bgG-NN-JwL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jjv-3g-C9X"/>
                             <constraint firstItem="hRv-DH-vmy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c6Z-o5-K5J"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hRv-DH-vmy" secondAttribute="bottom" constant="8" id="fc0-c5-ZEN"/>
+                            <constraint firstItem="kSA-Kg-EPf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iHe-Vp-e2G"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="coloredNumberLabel" destination="kSA-Kg-EPf" id="ZiH-HV-gKi"/>
                         <outlet property="nameLabel" destination="bgG-NN-JwL" id="sj7-bA-3iZ"/>
                     </connections>
                 </viewController>
